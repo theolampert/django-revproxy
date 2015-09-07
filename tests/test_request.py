@@ -50,7 +50,7 @@ class RequestTest(TestCase):
         CustomProxyView.as_view()(request, '/test')
 
         url = 'http://www.example.com/test'
-        headers = {'REMOTE_USER': 'jacob', 'Cookie': ''}
+        headers = {'Remote-User': 'jacob', 'Cookie': ''}
         self.urlopen.assert_called_with('GET', url,
                                         redirect=False,
                                         retries=None,

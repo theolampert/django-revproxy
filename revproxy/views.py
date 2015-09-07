@@ -109,7 +109,7 @@ class ProxyView(View):
         request_headers = normalize_headers(request)
 
         if self.add_remote_user and request.user.is_active:
-            request_headers['REMOTE_USER'] = request.user.username
+            request_headers['Remote-User'] = request.user.username
             self.log.info("REMOTE_USER set")
 
         return request_headers
