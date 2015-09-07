@@ -103,6 +103,11 @@ class ProxyView(View):
 
         .. versionadded:: 0.9.1
 
+        .. versionchanged:: 0.9.6
+
+           The name of the remote user header was changed from
+           `REMOTE_USER` to `Remote-User`.
+
         :param request:  The original HTTPRequest instance
         :returns:  Normalized headers for the upstream
         """

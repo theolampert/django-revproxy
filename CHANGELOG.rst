@@ -3,6 +3,7 @@
 ==================
 
 * Fixed connections pools
+* Fixed Remote-User header name
 
 
 0.9.5 (2015-09-02)
